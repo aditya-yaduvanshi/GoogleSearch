@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Advanced Search</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="GlogoPNG.png">
+</head>
+<body>
+  <div class="header" style="background: #f1f1f1;">
+    <div class="advancedgooglelogo" style="background: #f1f1f1;">
+      <img src="Googlelogo.png" style="background: #f1f1f1;">
+    </div>
+    <div class="head" style="background: #f1f1f1;">
+      <a href="index.html" style="background: #f1f1f1;">Search</a>
+      <a href="images.html" style="background: #f1f1f1;">Images</a>
+    </div>
+  </div>
+  <div class="appbar">
+    <label>Advanced Search</label>
+  </div>
+  <div id="headerline" style="height: 0px; width: auto; border-bottom: 1px solid #ebebeb; "></div>
+  <form id="advancedform" action="https://google.com/search" method="GET" name="f">
+    <div class="upperwrap">
+      <div class="findpageswithguide">
+        <span>Find pages with...</span>
+      </div>
+      <div class="advancedinputboxguide">
+      </div>
+      <div class="todohelpguide">
+        <span>To do this in the search box.</span>
+      </div>
+      <br>
+      <div class="searchphrases">
+        <div class="linewrap">
+          <div class="findpageswith">
+            <label>all these words:</label>
+          </div>
+          <div class="advancedinputbox">
+            <input type="text" name="as_q">
+          </div>
+          <div class="todohelp">
+            <label>Type the important words:</label> <span>tri-colour rat terrier</span>
+          </div>
+        </div>
+        <div class="linewrap">
+          <div class="findpageswith">
+            <label>this exact word or phrase:</label>
+          </div>
+          <div class="advancedinputbox">
+            <input type="text" name="as_epg">
+          </div>
+          <div class="todohelp">
+            <label>Put exact words in quotes:</label><span>"rat terrier"</span>
+          </div>
+        </div>
+        <div class="linewrap">
+          <div class="findpageswith">
+            <label>any of these words:</label>
+          </div>
+          <div class="advancedinputbox">
+            <input type="text" name="as_oq">
+          </div>
+          <div class="todohelp">
+            <label>Type OR between all the words you want:</label><span>miniature OR standard</span>
+          </div>
+        </div>
+        <div class="linewrap">
+          <div class="findpageswith">
+            <label>none of these words:</label>
+          </div>
+          <div class="advancedinputbox">
+            <input type="text" name="as_eq">
+          </div>
+          <div class="todohelp, todohelpbig">
+            <label>Put a minus sign just before the words that you don't want:</label> <br><span>-rodent, -"Jack Russell"</span>
+          </div>
+        </div>
+        <div class="linewrap">
+          <div class="findpageswith">
+            <label>numbers ranging from:</label>
+          </div>
+          <div class="advancedinputbox">
+            <div class="range">
+              <input type="text" name="as_nlo">
+            </div>
+            <div class="fromto"><label>to</label></div>
+            <div class="range">
+              <input type="text" name="as_nhi">
+            </div>
+          </div>
+          <div class="todohelp, todohelpbig">
+            <label>Put two full stops between the numbers and add a unit measurement:</label><br><span>10..35 kg, £300..£500, 2010..2011</span>
+          </div>
+        </div>
+      </div>
+      <div class="divline" style="height: 0px; width: 1140px; border-bottom: 1px solid #ebebeb; margin-bottom: 18px;"></div>
+      <div class="searchphrases">
+        <div class="narrowwrap">
+          <div class="thannarrowyourresults">
+            <span>Than narrow your results <br>by...</span>
+          </div>
+          <div class="narrowguide">
+          </div>
+          <div class="narrowhelpguide"></div>
+        </div>
+        <div class="narrowwrap">
+          <div class="thannarrowyourresults">
+            <label>language:</label>
+          </div>
+          <div class="narrowguide">
+            <select class="SelectOptions">
+              <option selected>any language</option>
+              <option>Afrikaans</option>
+              <option>Amharic</option>
+              <option>Bulgarian</option>
+              <option>Catalan</option>
+              <option>Chinese (Hong Kong)</option>
+              <option>Chinese (PRC)</option>
+              <option>Chinese (Taiwan)</option>
+              <option>Croatian</option>
+              <option>Czech</option>
+              <option>Danish</option>
+              <option>Dutch</option>
+              <option>English (UK)</option>
+              <option>English (US)</option>
+              <option>Estonian</option>
+              <option>Filipino</option>
+              <option>Finnish</option>
+              <option>French (Canada)</option>
+              <option>French (France)</option>
+              <option>German</option>
+              <option>Greek</option>
+              <option>Hebrew</option>
+              <option>Hindi</option>
+              <option>Hungarian</option>
+              <option>Icelandic</option>
+              <option>Indonesian</option>
+              <option>Italian</option>
+              <option>Japanese</option>
+              <option>Korean</option>
+              <option>Latvian</option>
+              <option>Lithuanian</option>
+              <option>Malay</option>
+              <option>Norwegian</option>
+              <option>Polish</option>
+              <option>Portuguese (Brazil)</option>
+              <option>Portuguese (Portugal)</option>
+              <option>Romanian</option>
+              <option>Russian</option>
+              <option>Serbian</option>
+              <option>Slovak</option>
+              <option>Slovenian</option>
+              <option>Spanish (Latin America)</option>
+              <option>Spanish (Spain)</option>
+              <option>Swahili</option>
+              <option>Swedish</option>
+              <option>Thai</option>
+              <option>Turkish</option>
+              <option>Ukrainian</option>
+              <option>Vietnamese</option>
+              <option>Zulu</option>
+            </select>
+          </div>
+          <div class="narrowhelpguide">
+            <span>Find pages in the language that you select.</span>
+          </div>
+        </div>
+        <div class="narrowwrap">
+          <div class="thannarrowyourresults">
+            <label>region:</label>
+          </div>
+          <div class="narrowguide">
+            <select class="SelectOptions">
+              <option selected>any region</option>
+              <option>Afghanistan</option>
+              <option>Albania</option>
+              <option>Algeria</option>
+              <option>American Samoa</option>
+              <option>Andorra</option>
+              <option>Angola</option>
+              <option>Anguilla</option>
+              <option>Antarctica</option>
+              <option>Antigua & Barbuda</option>
+              <option>Argentina</option>
+              <option>Armenia</option>
+              <option>Aruba</option>
+              <option>Australia</option>
+              <option>Austria</option>
+              <option>Azerbaijan</option>
+              <option>Bahamas</option>
+              <option>Bahrain</option>
+              <option>Bangladesh</option>
+              <option>Barbados</option>
+              <option>Belarus</option>
+              <option>Belgium</option>
+              <option>Belize</option>
+              <option>Benin</option>
+              <option>Barmuda</option>
+              <option>Bhutan</option>
+              <option>Bolivia</option>
+              <option>Bosnia & Herzegovina</option>
+              <option>Botswana</option>
+              <option>Bouvet Island</option>
+              <option>Brazil</option>
+              <option>British Indian Ocean Territory</option>
+              <option>British Virgin Island</option>
+              <option>Brunei</option>
+              <option>Bulgaria</option>
+              <option>Burkina Faso</option>
+              <option>Burundi</option>
+              <option>Cambodia</option>
+              <option>Cameroon</option>
+              <option>Canada</option>
+              <option>Cape Verde</option>
+              <option>Cayman Island</option>
+              <option>Central African Republic</option>
+              <option>Chad</option>
+              <option>Chile</option>
+              <option>China</option>
+              <option>Chrishtmas Island</option>
+              <option>Cocos (Keeling) Islands</option>
+              <option>Colombia</option>
+              <option>Comoros</option>
+              <option>Congo - Brazzaville</option>
+              <option>Conga - Kinshasa</option>
+              <option>Cook Islands</option>
+              <option>Cote d'Ivoire</option>
+              <option>Croatia</option>
+              <option>Cuba</option>
+              <option>Cyprus</option>
+              <option>Czechia</option>
+              <option>Denmark</option>
+              <option>Dijbouti</option>
+              <option>Dominica</option>
+              <option>Dominican republic</option>
+              <option>Ecuador</option>
+              <option>Egypt</option>
+              <option>El Salvador</option>
+              <option>Equatorial Guinea</option>
+              <option>Eretria</option>
+              <option>Estonia</option>
+              <option>Eswatini</option>
+              <option>Ethiopia</option>
+              <option>Falkland Islands (Islas Malvinas)</option>
+              <option>Faroe Islands</option>
+              <option>Fiji</option>
+              <option>Finland</option>
+              <option>France</option>
+              <option>French Guiana</option>
+              <option>French Polynesia</option>
+              <option>French Southern Territories</option>
+              <option>Gabon</option>
+              <option>Gambia</option>
+              <option>Gorgia</option>
+              <option>Germany</option>
+              <option>Ghana</option>
+              <option>Gilbraltar</option>
+              <option>Greece</option>
+              <option>Greenland</option>
+              <option>Grenada</option>
+              <option>Guadeloupe</option>
+              <option>Guam</option>
+              <option>Guatemala</option>
+              <option>Guinea</option>
+              <option>Guinea-Bissau</option>
+              <option>Guyana</option>
+              <option>Haiti</option>
+              <option>Heard & McDonald Islands</option>
+              <option>Honduras</option>
+              <option>HongKong</option>
+              <option>Hungary</option>
+              <option>Iceland</option>
+              <option>India</option>
+              <option>Indonesia</option>
+              <option>Iran</option>
+              <option>Iraq</option>
+              <option>Ireland</option>
+              <option>Israel</option>
+              <option>Italy</option>
+              <option>Jamaica</option>
+              <option>Japan</option>
+              <option>Jordan</option>
+              <option>Kazakhstan</option>
+              <option>Kenya</option>
+              <option>Kiribati</option>
+              <option>Kuwait</option>
+              <option>Kyrgyzstan</option>
+              <option>Laos</option>
+              <option>Latvia</option>
+              <option>Lebanon</option>
+              <option>Lesotho</option>
+              <option>Liberia</option>
+              <option>Libya</option>
+              <option>Liechtenstein</option>
+              <option>Lithuania</option>
+              <option>Luxembourg</option>
+              <option>Macao</option>
+              <option>Madagascar</option>
+              <option>Malawi</option>
+              <option>Malaysia</option>
+              <option>Maldives</option>
+              <option>Mali</option>
+              <option>Malta</option>
+              <option>Marshall Islands</option>
+              <option>Martinique</option>
+              <option>Mauritania</option>
+              <option>Mauritius</option>
+              <option>Mayotte</option>
+              <option>Mexico</option>
+              <option>Micronesia</option>
+              <option>Moldova</option>
+              <option>Monaco</option>
+              <option>Mangolia</option>
+              <option>Montserrat</option>
+              <option>Morocco</option>
+              <option>Mozambique</option>
+              <option>Myanmar (Burma)</option>
+              <option>Namibia</option>
+              <option>Nauru</option>
+              <option>Nepal</option>
+              <option>Netherlands</option>
+              <option>New Caledonia</option>
+              <option>New Zealand</option>
+              <option>Nicaragua</option>
+              <option>Niger</option>
+              <option>Nigeria</option>
+              <option>Niue</option>
+              <option>Norfolk Island</option>
+              <option>North Korea</option>
+              <option>North Macedonia</option>
+              <option>Northern Mariana Islands</option>
+              <option>Norway</option>
+              <option>Oman</option>
+              <option>Pakistan</option>
+              <option>Palau</option>
+              <option>Palestine</option>
+              <option>Panama</option>
+              <option>Papua New Guinea</option>
+              <option>Paraguay</option>
+              <option>Peru</option>
+              <option>Philippines</option>
+              <option>Pitcairn Islands</option>
+              <option>Poland</option>
+              <option>Portugal</option>
+              <option>Puerto Rico</option>
+              <option>Qatar</option>
+              <option>Reunion</option>
+              <option>Romania</option>
+              <option>Russia</option>
+              <option>Rwanda</option>
+              <option>Samoa</option>
+              <option>San Marino</option>
+              <option>Sao Tome & Principe</option>
+              <option>Saudi Arabia</option>
+              <option>Senegal</option>
+              <option>Serbia</option>
+              <option>seychelles</option>
+              <option>Sierra Leone</option>
+              <option>Singapore</option>
+              <option>Slovakia</option>
+              <option>Slovenia</option>
+              <option>Solomon Islands</option>
+              <option>Somalia</option>
+              <option>South Africa</option>
+              <option>South Georgia & South Sandwich Islands</option>
+              <option>South Korea</option>
+              <option>Spain</option>
+              <option>Sri Lanka</option>
+              <option>St. Helena</option>
+              <option>St. Kitts & Nevis</option>
+              <option>St. Lucia</option>
+              <option>St. Pierre & Miquelon</option>
+              <option>St. Vincent & Grenadines</option>
+              <option>Sudan</option>
+              <option>Suriname</option>
+              <option>Svalbard & Jan Mayen</option>
+              <option>Sweden</option>
+              <option>Switzerland</option>
+              <option>Syria</option>
+              <option>Taiwan</option>
+              <option>Tajikistan</option>
+              <option>Tanzania</option>
+              <option>Thailand</option>
+              <option>Togo</option>
+              <option>Tokelau</option>
+              <option>Tongo</option>
+              <option>Trinidad & Tobago</option>
+              <option>Tunisia</option>
+              <option>Turkey</option>
+              <option>Turkmenistan</option>
+              <option>Turks & Caicos Islands</option>
+              <option>Tuvalu</option>
+              <option>U.S. Outlying Islands</option>
+              <option>U.S. Virgin Islands</option>
+              <option>Uganda</option>
+              <option>Ukraine</option>
+              <option>United Arab Emirates</option>
+              <option>United Kingdom</option>
+              <option>United States</option>
+              <option>Uruguay</option>
+              <option>Uzbekistan</option>
+              <option>Vanuatu</option>
+              <option>Vetican City</option>
+              <option>Venezuela</option>
+              <option>Vietnam</option>
+              <option>Wallis & Futuna</option>
+              <option>Western Sahara</option>
+              <option>Yemen</option>
+              <option>Zambia</option>
+              <option>Zimbabwe</option>
+            </select>
+          </div>
+          <div class="narrowhelpguide">
+            <span>Find pages published in a particular region.</span>
+          </div>
+        </div>
+        <div class="narrowwrap">
+          <div class="thannarrowyourresults">
+            <label>time:</label>
+          </div>
+          <div class="narrowguide">
+            <select class="SelectOptions">
+              <option selected>anytime</option>
+              <option>last 24 hours</option>
+              <option>upto a week ago</option>
+              <option>upto a month ago</option>
+              <option>upto a year ago</option>
+            </select>
+          </div>
+          <div class="narrowhelpguide">
+            <span>Find pages updated within the time that you specify.</span>
+          </div>
+        </div>
+        <div class="narrowwrap">
+          <div class="thannarrowyourresults">
+            <label>site or domain:</label>
+          </div>
+          <div class="narrowguide">
+            <input type="text" name="as_sitesearch">
+          </div>
+          <div class="narrowhelpguide, narrowhelpguidebig">
+            <span>Search one site (like wikipedia.org ) or limit your results to a domain like .edu, .org or .gov</span>
+          </div>
+        </div>
+        <div class="narrowwrap">
+          <div class="thannarrowyourresults">
+            <label>terms appearing:</label>
+          </div>
+          <div class="narrowguide">
+            <select class="SelectOptions">
+              <option selected>anywhere in the page</option>
+              <option>in the title of the page</option>
+              <option>in the text of the page</option>
+              <option>in the URL of the page</option>
+              <option>in links to the page</option>
+            </select>
+          </div>
+          <div class="narrowhelpguide, narrowhelpguidebig">
+            <span>Search for terms in the whole page, page title or web address, or links to the page you're looking for.</span>
+          </div>
+        </div>
+        <div class="narrowwrap">
+          <div class="thannarrowyourresults">
+            <label><a href="https://support.google.com/websearch/answer/510?p=adv_safesearch&hl=en&visit_id=637514143195585046-1046028953&rd=1">SafeSearch</a>:</label>
+          </div>
+          <div class="narrowguide">
+            <select class="SelectOptions">
+              <option selected>Show explicit results</option>
+              <option>Hide explicit results</option>
+            </select>
+          </div>
+          <div class="narrowhelpguide">
+            <span>Tell <a href="https://support.google.com/websearch/answer/510?p=adv_safesearch&hl=en&visit_id=637514143195585046-1046028953&rd=1">SafeSearch</a> whether to filter sexually explicit content.</span>
+          </div>
+        </div>
+        <div class="narrowwrap">
+          <div class="thannarrowyourresults">
+            <label>file type:</label>
+          </div>
+          <div class="narrowguide">
+            <select class="SelectOptions">
+              <option selected>any format</option>
+              <option>Adobe Acrobat PDF (.pdf)</option>
+              <option>Adobe Postscript (.ps)</option>
+              <option>Autodesk DWF (.dwf)</option>
+              <option>Google Earth KML (.kml)</option>
+              <option>Google Earth KMZ (.kmz)</option>
+              <option>Microsoft Excel (.xsl)</option>
+              <option>Microsoft PowerPoint (.ppt)</option>
+              <option>Microsoft Word (.doc)</option>
+              <option>Right Text Format (.rtf)</option>
+              <option>Shockwave Flash (.swf)</option>
+            </select>
+          </div>
+          <div class="narrowhelpguide">
+            <span>Find pages in the format that you prefer.</span>
+          </div>
+        </div>
+        <div class="narrowwrap">
+          <div class="thannarrowyourresults">
+            <label><a href="https://support.google.com/websearch/answer/29508?p=ws_images_usagerights&hl=en&visit_id=637514143195585046-1046028953&rd=1">usage rights</a>:</label>
+          </div>
+          <div class="narrowguide">
+            <select class="SelectOptions">
+              <option selected>not filtered by licence</option>
+              <option>free to use or share</option>
+              <option>free to use or share, even commercially</option>
+              <option>free to use or share or modify</option>
+              <option>free to use, share or modify, even commercially</option>
+            </select>
+          </div>
+          <div class="narrowhelpguide">
+            <span>Find pages that you are free to use yourself.</span>
+          </div>
+        </div>
+        <div class="narrowwrap">
+          <div class="thannarrowyourresults"></div>
+          <div class="narrowguide">
+            <input id="advbutton" type="submit" name="Advanced Search" value="Advanced Search">
+          </div>
+      </div>
+    </div>
+  </form>
+  <div class="divline" style="height: 0px; width: 1140px; border-bottom: 1px solid #ebebeb; margin-bottom: 28px; margin-top: 28px;"></div>
+  <div class="youcanalso"><span>You can also...</span></div>
+  <div id="footerlinks">
+    <div class="footerlinks">
+      <a href="https://support.google.com/websearch/answer/2466433?visit_id=637514143195585046-1046028953&p=adv_pages_similar&hl=en&rd=1">Find pages that are similar to a URL</a>
+    </div>
+    <div class="footerlinks">
+      <a href="https://support.google.com/websearch/answer/54068?p=adv_pages_visited&hl=en&visit_id=637514143195585046-1046028953&rd=1">Search pages that you've visited</a>
+    </div>
+    <div class="footerlinks">
+      <a href="https://support.google.com/websearch/answer/2466433?visit_id=637514143195585046-1046028953&p=adv_operators&hl=en&rd=1">Use operators in the search box</a>
+    </div>
+    <div class="footerlinks">
+      <a href="https://www.google.co.in/preferences?hl=en-IN">Customize your search settings</a>
+    </div>
+  </div>
+  <div class="location">
+    <input type="reset" value="India">
+  </div>
+  <div class="footer">
+    <div class="footerLeftPart">
+      <a class="footerLeft" href="https://about.google/?utm_source=google-IN&utm_medium=referral&utm_campaign=hp-footer&fg=1">About</a>
+      <a class="footerLeft" href="https://ads.google.com/intl/en_in/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Adversing</a>
+      <a class="footerLeft" href="https://www.google.com/intl/en_in/business/">Business</a>
+      <a class="footerLeft" href="https://www.google.com/search/howsearchworks/?fg=1">How Search works</a>
+    </div>
+    <div class="footerRightPart">
+      <a class="footerRight" href="https://policies.google.com/privacy?hl=en-IN&fg=1">Privacy</a>
+      <a class="footerRight" href="https://policies.google.com/terms?hl=en-IN&fg=1">Terms</a>
+      <button class="setting, footerRight">Setting</button>
+    </div>
+  </div>
+</body>
+</html>

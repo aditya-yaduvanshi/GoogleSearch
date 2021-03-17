@@ -1,0 +1,513 @@
+/* Google Search */
+* {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+.head>a:hover, .langpart>a:hover, .footer a:hover {
+  text-decoration: underline;
+}
+.searchbuttons>input:hover {
+  border: 1px solid #afb1b3;
+}
+.searchbox:hover {
+  border: 1px solid #afb1b3;
+}
+.header {
+  height: 48px;
+  padding: 6px;
+  width: auto;
+  max-width: 100%;
+  margin: 0;
+  text-align: right;
+  position: relative;
+  top: 0;
+}
+.head {
+  height: 32px;
+  text-align: right;
+  position: relative;
+  top: 16px;
+  width: 50%;
+  display: inline;
+}
+.head>a {
+  padding-right: 15px;
+  text-decoration: none;
+  color: #000000de;
+  cursor: pointer;
+}
+.googlelogo {
+  width: auto;
+  max-width: 100%;
+  height: 92px;
+  text-align: center;
+}
+.search {
+  height: 140px;
+  padding: 20px;
+  width: auto;
+  max-width: 100%;
+  text-align: center;
+  display: flex;
+  flex: 100%;
+  justify-content: center;
+}
+.searchbox {
+  height: 44px;
+  width: 584px;
+  display: flex;
+  flex: 100%;
+  justify-content: center;
+  border: 1px solid #dfe1e5;
+  border-radius: 24px;
+  z-index: 3;
+}
+.searchicon, .micicon {
+  width: 28px;
+  height: 34px;
+  padding: 2px;
+  position: relative;
+  top: 3px;
+}
+.searchicon>img {
+  position: absolute;
+  top: 12px;
+  right: 7px;
+}
+.micicon {
+  margin-left: 4px;
+  cursor: pointer;
+}
+.micicon>img {
+  position: absolute;
+  top: 8px;
+  left: 7px;
+}
+#cross {
+  background: black;
+  content: "";
+  height: 20px;
+  width: 20px;
+  border-radius: 0;
+  padding: 0;
+  position: absolute;
+  left: 5px;
+  top: 50px;
+  transform: rotate(45deg);
+}
+.micicon>span, .imagemicicon>span, .imagecamera>span {
+  background: black;
+  color: white;
+  width: 120px;
+  height: 20px;
+  visibility: hidden;
+  text-align: center;
+  border-radius: 4px;
+  position: absolute;
+  top: 50px;
+  left: -45px;
+  text-align: center;
+  font-size: 11px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 6px;
+}
+
+.micicon:hover span, .imagemicicon:hover span, .imagecamera:hover span {
+  visibility: visible;
+  transition: 0.6s;
+}
+.inputbox {
+  height: 34px;
+  width: 487px;
+  padding: 5px;
+}
+.inputbox>input {
+  height: 34px;
+  width: 487px;
+  background: transparent;
+  color: rgba(0, 0, 0, .87);
+  outline: none;
+  display: flex;
+  flex: 100%;
+  font-size: 16px;
+  border: none;
+  padding: 0;
+  text-align: left;
+  -webkit-tap-highlight-color: transparent ! important;
+}
+.searchbuttons {
+  height: 60px;
+  padding-top: 18px;
+}
+.searchbuttons>input {
+  height: 36px;
+  padding-right: 16px;
+  padding-left: 16px;
+  margin-left: 4px;
+  margin-right: 4px;
+  margin-top: 11px;
+  margin-bottom: 11px;
+  background-color: #f8f9fa;
+  border: 1px solid #f8f9fa;
+  border-radius: 4px;
+  color: #3c4043;
+  cursor: pointer;
+}
+.languages {
+  text-align: center;
+  box-sizing: border-box;
+  flex-grow: 1;
+  flex-shrink: 0;
+  height: 198px;
+}
+.langpart {
+  height: 28px;
+}
+.langpart>a {
+  color: #1a0dab;
+  padding-top: 0px;
+  padding-left: 3px;
+  font-size: 13px;
+  padding-right: 3px;
+  padding-bottom: 0;
+  text-decoration: none;
+}
+.location {
+  height: 18px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: left;
+  border-bottom: 1px solid #dadce0; 
+  background: #efefef;
+}
+.location>input{
+  font-size: 15px;
+  color: #0000008a;
+  border: none;
+  background: inherit;
+}
+.footer {
+  position: relative;
+  bottom: 0;
+  height: 46px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background: #efefef;
+}
+.footerLeftPart, .footerRightPart {
+  display: inline;
+  height: 46px;
+  position: absolute;
+  bottom: 0;
+  background: inherit;
+  display: flex;
+  justify-content: center;
+}
+.footerLeftPart {
+  left: 20px;
+}
+.footerRightPart {
+  right: 20px;
+}
+.footerLeft, .footerRight {
+  background: inherit;
+  color: #0000008a;
+  padding: 15px;
+  text-decoration: none;
+  border: none;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+/* Google Image Search */
+.wholepage {
+  position: absolute;
+  top: 0;
+  min-height: 100%;
+  min-width: 100%;
+}
+.adjustdiv {
+  height: 78px;
+}
+.googleimageslogo {
+  width: auto;
+  max-width: 100%;
+  height: 101px;
+  padding-top: 111px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 0;
+}
+.imagelabel {
+  height: 16px;
+  width: 52px;
+  text-align: center;
+  position: absolute;
+  bottom: 2px;
+  right: 544px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.imagelabel>span {
+  color: #4285f4;
+  font-size: 16px;
+  font-family: roboto-regular, Arial, Helvetica, sans-serif;
+}
+.imagesearchicon, .searchblue, .imagecamera, .imagemicicon {
+  display: flex;
+  justify-content: center;
+  width: 28px;
+  height: 34px;
+  padding: 2px;
+  position: relative;
+  top: 3px;
+}
+.imagesearchicon>img, .searchblue>img, .imagecamera>img, .imagemicicon>img {
+  margin: auto;
+}
+.searchblue, .imagecamera, .imagemicicon {
+  cursor: pointer;
+}
+.searchblue {
+  left: 38px;
+}
+.imagesearchicon {
+  right: 40px; 
+}
+.imagemicicon {
+  left: 20px;
+}
+.inputimagebox {
+  width: 355px;
+  height: 44px;
+  position: relative;
+  right: 20px;
+}
+.inputimagebox>input {
+  width: 345px;
+  height: 34px;
+  border: none;
+  outline: none;
+  padding: 5px;
+  position: absolute;
+  right: 0;
+  left: 0;
+}
+/* Google Advanced Search */
+.advancedgooglelogo {
+  height: 60px;
+  width: 92px;
+  display: inline;
+  position: absolute;
+  left: 15px;
+  top: 0;
+  display: flex;
+  justify-content: center;
+}
+.advancedgooglelogo>img {
+  width: 92px;
+  height: 33px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.appbar {
+  height: 23.64px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: 35px;
+  margin-right: 35px;
+  width: auto;
+  font-size: 20px;
+}
+.appbar>label {
+  color: #d93025;
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+#advancedform {
+  margin: 0;
+}
+.upperwrap, .findpageswithguide, .findpageswith, .todohelpguide, .todohelp, .advancedinputboxguide, .advancedinputbox, .range, .searchphrases, .fromto, .todohelpbig, .range, .thannarrowyourresults, .narrowguide, .narrowwrap, .narrowhelpguide, .youcanalso {
+  display: inline-block;
+  margin: 0;
+}
+.upperwrap {
+  margin-left: 45px;
+  margin-top: 34px;
+  background: transparent;
+}
+.findpageswithguide, .findpageswith, .advancedinputboxguide, .advancedinputbox, .todohelpguide, .todohelp, .linewrap, .fromto, .todohelpbig, .range, .thannarrowyourresults, .narrowguide, .narrowwrap, .narrowhelpguide, .narrowhelpguidebig, .youcanalso {
+  display: inline-block;
+  justify-content: left;
+  height: 42px;
+  margin-top: 0;
+}
+.searchphrases {
+  position: relative;
+  top: -29px;
+  background: inherit;
+  height: 210px;
+}
+.linewrap {
+  position: relative;
+  top: 0px;
+}
+.findpageswith, .todohelp, .narrowhelpguide, .narrowhelpguidebig {
+  position: relative;
+  top: -12px;
+}
+.todohelpbig {
+  position: relative;
+  top: 0px;
+}
+.findpageswithguide, .findpageswith, .thannarrowyourresults, .youcanalso {
+  width: 182px;
+}
+.advancedinputboxguide, .advancedinputbox, .narrowguide {
+  width: 572px;
+  background: inherit;
+}
+.advancedinputbox, .range {
+  margin: 0;
+}
+.todohelpguide, .todohelp, .todohelpbig, .narrowhelpguide, .narrowhelpguidebig {
+  width: 385px;
+  background: inherit;
+}
+.findpageswithguide, .todohelpguide {
+  position: relative;
+  top: -29px;
+  background: inherit;
+}
+.todohelpguide>span, .findpageswithguide>span, .thannarrowyourresults {
+  position: relative;
+}
+.findpageswithguide>span, .thannarrowyourresults>span, .youcanalso>span {
+  font-size: 16px;
+  color: #333333;
+  top: 12.5px;
+  background: transparent;
+}
+.todohelpguide>span {
+  font-size: 13px;
+  color: #777777;
+  font-weight: bold;
+  top: 12px;
+  background: inherit;
+}
+.findpageswith>label, .thannarrowyourresults>label {
+  font-size: 13px;
+  color: #222222;
+  position: relative;
+  top: 11px;
+}
+.advancedinputbox>input, .narrowguide select, .narrowguide>input {
+  width: 570px;
+}
+.range {
+  width: 261px;
+}
+.range>input {
+  width: 259px;
+}
+.fromto {
+  width: 30px;
+  text-align: center;
+  position: relative;
+  top: -12px;
+  margin: 0;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+.fromto>label {
+  font-size: 13px;
+  color: #202124;
+  position: relative;
+  top: 12px;
+}
+.advancedinputbox>input, .range>input, .narrowguide select, .narrowguide>input {
+  height: 27px;
+  border-radius: 1px;
+  border: 1px solid #d9d9d9;
+  border-top: 1px solid #c0c0c0;
+  font-size: 13px;
+  margin-top: 6.5px;
+  margin-bottom: 6.5px;
+}
+.narrowguide select {
+  background: #f5f5f5;
+  background-image: -webkit-tap-highlight-color(top,#f5f5f5, #f1f1f1);
+}
+.todohelpbig>label, .todohelpbig>span {
+  position: relative;
+  top: 6px;
+  left: 11px;
+}
+.todohelp>label, .todohelp>span, .narrowhelpguide>span {
+  position: relative;
+  top: 11px;
+  left: 11px;
+}
+.narrowhelpguidebig>span {
+  position: relative;
+  left: 11px;
+  top: 8px;
+}
+.narrowhelpguidebig {
+  top: 1px;
+}
+.thannarrowyourresults a, .narrowhelpguidebig a, .narrowhelpguide a, .footerlinks a {
+  color: #0000ee;
+  text-decoration: none;
+}
+.thannarrowyourresults a, .footerlinks a {
+  font-size: 13px;
+}
+.thannarrowyourresults a:hover, .narrowhelpguide a:hover, .narrowhelpguidebig a:hover, .footerlinks a:hover {
+  text-decoration: underline;
+}
+.narrowhelpguidebig a, .narrowhelpguide a {
+  font-size: 11px;
+}
+.todohelp>label, .todohelpbig>label, .narrowhelpguide>span, .narrowhelpguidebig>span {
+  font-size: 11px;
+  color: #555555;
+}
+.todohelp>span, .todohelpbig>span {
+  font-size: 11px;
+  font-family: monospace;
+  color: #666666;
+}
+.narrowwrap {
+  position: relative;
+  top: 28px;
+}
+.thannarrowyourresults {
+  position: relative;
+  top: -10px;
+}
+#advbutton {
+  background: #4D90fe;
+  height: 30px;
+  width: 120px;
+  border-radius: 1px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 11px;
+  border: 1px solid #3079ed;
+  color: #fff;
+  box-shadow: none;
+  cursor: default;
+  position: absolute;
+  right: 0;
+  top: 6px;
+}
+#footerlinks {
+  margin-bottom: 30px;
+}
